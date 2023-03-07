@@ -10,6 +10,9 @@ public class Animal {
         this.numberOfPaws = numberOfPaws;
         this.hasFur = hasFur;
     }
+    
+    public Animal() {
+    }
 
     public String getDescription() {
         String plural = numberOfPaws == 1 ? "paw" : "paws";
