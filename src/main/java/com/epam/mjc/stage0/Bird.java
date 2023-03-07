@@ -7,8 +7,8 @@ public class Bird {
     
     @Override
     public String getDescription() {
-        String plural = (getNumberOfPaws() == 1) ? "paw" : "paws";
-        String fur = (hasFur()) ? "a" : "no";
+        String plural = getNumberOfPaws() == 1 ? "paw" : "paws";
+        String fur = hasFur ? "a" : "no";
         return super.getDescription() + " Moreover, it has 2 wings and can fly.";
     }
 }
