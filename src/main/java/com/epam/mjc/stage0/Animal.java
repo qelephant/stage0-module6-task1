@@ -19,12 +19,4 @@ public class Animal {
         String fur = hasFur ? "a" : "no";
         return "This animal is mostly " + color + ". It has " + numberOfPaws + " " + plural + " and " + fur + " fur.";
     }
-
-    public int getNumberOfPaws() {
-        return numberOfPaws;
-    }
-
-    public boolean isHasFur(){
-        return hasFur;
-    }
 }
