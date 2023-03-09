@@ -15,8 +15,8 @@ public class Animal {
     }
 
     public String getDescription() {
-        String plural = numberOfPaws == 1 ? "paw" : "paws";
-        String fur = hasFur ? "a" : "no";
+        String plural = getNumberOfPaws() == 1 ? "paw" : "paws";
+        String fur = isHasFur() ? "a" : "no";
         return "This animal is mostly " + color + ". It has " + numberOfPaws + " " + plural + " and " + fur + " fur.";
     }
     
